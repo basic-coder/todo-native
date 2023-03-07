@@ -46,14 +46,14 @@ const Home = () => {
             <TextInput style={styles.input} value={title} onChangeText={()=>setTitle(e.target.value)} placeholder="Title" />
             <TextInput style={styles.input} value={description} onChangeText={()=>setDescription(e.target.value)} placeholder="description" />
             <View style={{flexDirection:"row", alignItems:"center"}}>
-                <TouchableOpacity>
+                <TouchableOpacity style={{width:"50%",textAlign:"center"}}>
                     <Text onPress={()=>setOpenDailog(!openDailog)}>
                         Cancel
                     </Text>
-                    <Button color='#900' onPress={addTaskHandler}>
-                        ADD
-                    </Button>
                 </TouchableOpacity>
+                <Button style={{width:"50%",textAlign:"center"}} color='#900' onPress={addTaskHandler}>
+                    ADD
+                </Button>
             </View>
         </Dialog.Content>
     </Dialog>
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
         borderRadius: 100,
         alignSelf: "center",
         marginVertical: 20,
-        elevation: 5
+        elevation: 5,
     },
     input:{
         borderColor:"#b5b5b5",

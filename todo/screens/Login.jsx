@@ -5,6 +5,9 @@ import { Button, TextInput } from 'react-native-paper'
 const Login = ({navigation}) => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+  const loginHandler = () =>{
+
+  }
   return (
     <View
     style={{
@@ -56,7 +59,7 @@ const styles = StyleSheet.create({
       borderWidth: 1,
       padding: 10,
       paddingLeft: 15,
-      borderRadius: 1,
+      borderRadius: 5,
       marginVertical: 15,
       fontSize:15
   },
