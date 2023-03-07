@@ -1,6 +1,6 @@
-import { View, Text ,StyleSheet,TextInput, Button, TouchableOpacity} from 'react-native'
+import { View, Text ,StyleSheet,TextInput,  TouchableOpacity} from 'react-native'
 import React, { useState } from 'react'
-import { Avatar,  } from 'react-native-paper'
+import { Avatar,Button  } from 'react-native-paper'
 
 const Register = ({navigation}) => {
 
@@ -52,7 +52,7 @@ const Register = ({navigation}) => {
         />
 
         <Button disabled={!email|| !password || !name} style={styles.btn} onPress={registerHandler}>
-          <Text style={{color:"fff"}}>Register</Text>
+          <Text style={{color:"#fff"}}>Register</Text>
         </Button>
 
         <TouchableOpacity onPress={() => navigation.navigate('login')}>

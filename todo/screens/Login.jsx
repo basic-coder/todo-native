@@ -34,7 +34,7 @@ const Login = ({navigation}) => {
         />
 
         <Button disabled={!email|| !password} style={styles.btn} onPress={loginHandler}>
-          <Text style={{color:"fff"}}>Login</Text>
+          <Text style={{color:"#fff"}}>Login</Text>
         </Button>
 
         <Text style={{marginTop: 20}}>Or</Text>
@@ -57,8 +57,8 @@ const styles = StyleSheet.create({
       borderColor:"#b5b5b5",
       backgroundColor:"#fff",
       borderWidth: 1,
-      padding: 10,
-      paddingLeft: 15,
+      paddingRight: 10,
+      paddingLeft: 10,
       borderRadius: 5,
       marginVertical: 15,
       fontSize:15
